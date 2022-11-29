@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Arrays</title>
+  </head>
+  <body>
+    <header class="container">
+      <h1 class="subject">Arrays</h1>
+    </header>
+
+      <div class="container split">
+
+        <div class="block">
+          <p><span class="const">const </span><span class="characters">characters </span><span class="assignment">= </span><span class="brackets"> [</span></p>
+          <p class="curly-brackets">{</p>
+          <p><span class="key">name:</span><span class="value"> 'Luke Skywalker'</span><span class="assignment">,</span></p>
+          <p><span class="key">height:</span><span class="value"> '172'</span><span class="assignment">,</span></p>
+          <p><span class="key">mass:</span><span class="value"> '77'</span><span class="assignment">,</span></p>
+          <p><span class="key">eye_color:</span><span class="value"> 'blue'</span><span class="assignment">,</span></p>
+          <p><span class="key">gender:</span><span class="value"> 'male'</span><span class="assignment">,</span></p>
+          <p class="curly-brackets">} <span class="assignment">,</span></p>
+
+          <p class="curly-brackets">{</p>
+          <p><span class="key">name:</span><span class="value"> 'Darth Vader'</span><span class="assignment">,</span></p>
+          <p><span class="key">height:</span><span class="value"> '202'</span><span class="assignment">,</span></p>
+          <p><span class="key">mass:</span><span class="value"> '136'</span><span class="assignment">,</span></p>
+          <p><span class="key">eye_color:</span><span class="value"> 'yellow'</span><span class="assignment">,</span></p>
+          <p><span class="key">gender:</span><span class="value"> 'male'</span><span class="assignment">,</span></p>
+          <p class="curly-brackets">} <span class="assignment">,</span></p>
+
+          <p class="curly-brackets">{</p>
+          <p><span class="key">name:</span><span class="value"> 'Leia Organa'</span><span class="assignment">,</span></p>
+          <p><span class="key">height:</span><span class="value"> '150'</span><span class="assignment">,</span></p>
+          <p><span class="key">mass:</span><span class="value"> '49'</span><span class="assignment">,</span></p>
+          <p><span class="key">eye_color:</span><span class="value"> 'brown'</span><span class="assignment">,</span></p>
+          <p><span class="key">gender:</span><span class="value"> 'female'</span><span class="assignment">,</span></p>
+          <p class="curly-brackets">} <span class="assignment">,</span></p>
+
+          <p class="curly-brackets">{</p>
+          <p><span class="key">name:</span><span class="value"> 'Anakin Skywalker'</span><span class="assignment">,</span></p>
+          <p><span class="key">height:</span><span class="value"> '188'</span><span class="assignment">,</span></p>
+          <p><span class="key">mass:</span><span class="value"> '84'</span><span class="assignment">,</span></p>
+          <p><span class="key">eye_color:</span><span class="value"> 'blue'</span><span class="assignment">,</span></p>
+          <p><span class="key">gender:</span><span class="value"> 'male'</span><span class="assignment">,</span></p>
+          <p class="curly-brackets">} <span class="assignment">,</span></p>
+          <p><span class="brackets">]</span><span class="assignment">;</span></p>
+        </div>
+
+
+        <div class="cards">
+          <div class="card">
+            <h3 class="cards--map">Map</h3>
+            <ol>
+              <li>Get an array of all names: <button class="name__button__map__li__1">click me</button></li>
+              <span class="cards__map__li__1"></span>
+
+              <li>Get an array of all heights: <button class="name__button__map__li__2">click me</button></li>
+              <span class="cards__map__li__2"></span>
+
+
+              <li>Get an array of objects with just name and height properties: <button class="name__button__map__li__3">click me</button></li>
+              <span class="cards__map__li__3"></span>
+
+
+              <li>Get an array of all first names: <button class="name__button__map__li__4">click me</button></li>
+              <span class="cards__map__li__4"></span>
+            </ol>
+          </div>
+
+          <div class="card">
+            <h3 class="cards--map">Reduce</h3>
+            <ol>
+              <li>Get the total mass of all characters: <button class="name__button__reduce__li__1">click me</button></li>
+              <span class="cards__reduce__li__1"></span>
+
+              <li>Get the total height of all characters: <button class="name__button__reduce__li__2">click me</button></li>
+              <span class="cards__reduce__li__2"></span>
+
+
+              <li>Get the total number of characters in all the character names: <button class="name__button__reduce__li__3">click me</button></li>
+              <span class="cards__reduce__li__3"></span>
+
+
+              <li>Get the total number of characters by eye color (hint. a map of eye color to count): <button class="name__button__reduce__li__4">click me</button></li>
+              <span class="cards__reduce__li__4"></span>
+            </ol>
+          </div>
+
+          <div class="card">
+            <h3 class="cards--map">Filter</h3>
+            <ol>
+              <li>Get characters with mass greater than 100: <button class="name__button__filter__li__1">click me</button></li>
+              <span class="cards__filter__li__1"></span>
+
+              <li>Get characters with height less than 200: <button class="name__button__filter__li__2">click me</button></li>
+              <span class="cards__filter__li__2"></span>
+
+
+              <li>Get all male characters: <button class="name__button__filter__li__3">click me</button></li>
+              <span class="cards__filter__li__3"></span>
+
+
+              <li>Get all female characters: <button class="name__button__filter__li__4">click me</button></li>
+              <span class="cards__filter__li__4"></span>
+            </ol>
+          </div>
+
+
+          <div class="card">
+            <h3 class="cards--map">Sort</h3>
+            <ol>
+              <li>Sort by name: <button class="name__button__sort__li__1">click me</button></li>
+              <span class="cards__sort__li__1"></span>
+
+              <li>Sort by mass: <button class="name__button__sort__li__2">click me</button></li>
+              <span class="cards__sort__li__2"></span>
+
+
+              <li>Sort by height: <button class="name__button__sort__li__3">click me</button></li>
+              <span class="cards__sort__li__3"></span>
+
+              <li>Sort by gender: <button class="name__button__sort__li__4">click me</button></li>
+              <span class="cards__sort__li__4"></span>
+            </ol>
+          </div>
+
+
+
+          <div class="card">
+            <h3 class="cards--map">Every</h3>
+            <ol>
+              <li>Does every character have blue eyes? <button class="name__button__every__li__1">click me</button></li>
+              <span class="cards__every__li__1"></span>
+
+              <li>Does every character have mass more than 40? <button class="name__button__every__li__2">click me</button></li>
+              <span class="cards__every__li__2"></span>
+
+
+              <li>Is every character shorter than 200? <button class="name__button__every__li__3">click me</button></li>
+              <span class="cards__every__li__3"></span>
+
+              <li>Is every character male? <button class="name__button__every__li__4">click me</button></li>
+              <span class="cards__every__li__4"></span>
+            </ol>
+          </div>
+
+
+
+          <div class="card">
+            <h3 class="cards--map">Some</h3>
+            <ol>
+              <li>Is there at least one male character? <button class="name__button__some__li__1">click me</button></li>
+              <span class="cards__some__li__1"></span>
+
+              <li>Is there at least one character with blue eyes? <button class="name__button__some__li__2">click me</button></li>
+              <span class="cards__some__li__2"></span>
+
+
+              <li>Is there at least one character taller than 200? <button class="name__button__some__li__3">click me</button></li>
+              <span class="cards__some__li__3"></span>
+
+              <li>Is there at least one character that has mass less than 50? <button class="name__button__some__li__4">click me</button></li>
+              <span class="cards__some__li__4"></span>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="container">
+      <p>
+      Credits: taken from
+      <a href="https://github.com/jamesqquick/javascript-array-functions-practice/blob/master/worksheet.js">James Q Quick</a>.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
