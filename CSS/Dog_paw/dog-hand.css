@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+  background: #FFE9A0;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.left-side {
+  height: 35%;
+  width: 30%;
+  background: #553939;
+  transform: rotate(40deg);
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.right-side {
+  height: 35%;
+  width: 30%;
+  background: #553939;
+  transform: rotate(-40deg);
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.front-side {
+  position: absolute;
+  height: 35%;
+  width: 41%;
+  background: #553939;
+  top: 52.5%;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+}
+
+.finger-1 {
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  background: #553939;
+  top: 44%;
+  right: 71%;
+  border-radius: 50%;
+}
+
+.finger-2 {
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  background: #553939;
+  top: 27%;
+  right: 53%;
+  border-radius: 50%;
+}
+
+.finger-3 {
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  background: #553939;
+  top: 27%;
+  left: 53%;
+  border-radius: 50%;
+}
+
+.finger-4 {
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  background: #553939;
+  top: 44%;
+  left: 71%;
+  border-radius: 50%;
+}
