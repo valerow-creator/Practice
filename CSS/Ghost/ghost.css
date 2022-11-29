@@ -1,0 +1,46 @@
+*, *::before, *after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 300px;
+  height: 500px;
+  background: white;
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  position: relative;
+}
+
+.eye-left {
+  width: 50px;
+  height: 90px;
+  background: black;
+  top: 160px;
+  left: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.eye-right {
+  width: 50px;
+  height: 90px;
+  background: black;
+  top: 160px;
+  left: 225px;
+  position: absolute;
+  border-radius: 50%;
+}
+
