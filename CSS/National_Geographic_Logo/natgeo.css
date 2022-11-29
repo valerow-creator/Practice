@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+
+.natgeo {
+  border: 30px solid #FFD51C;
+  height: 375px;
+  width: 250px;
+}
+
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 8rem;
+  width: 6.5em;
+}
