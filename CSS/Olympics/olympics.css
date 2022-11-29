@@ -1,0 +1,67 @@
+html{
+  box-sizing: border-box;
+}
+*, *::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: 360px;
+  width: 740px;
+  position: relative;
+}
+
+.circle-1 {
+  width: 14.375rem;
+  height: 14.375rem;
+  border: 0.9375rem solid #0081C8;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-2 {
+  width: 14.375rem;
+  height: 14.375rem;
+  border: 0.9375rem solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 15.625rem;
+}
+
+.circle-3 {
+  width: 14.375rem;
+  height: 14.375rem;
+  border: 0.9375rem solid #EE334E;
+  border-radius: 50%;
+  position: absolute;
+  left: 31.25rem;
+}
+
+.circle-4 {
+  width: 14.375rem;
+  height: 14.375rem;
+  border: 0.9375rem solid #FCB131;
+  border-radius: 50%;
+  position: absolute;
+  left: 7.8125rem;
+  top: 7.5rem;
+}
+
+.circle-5 {
+  width: 230px;
+  height: 230px;
+  border: 0.9375rem solid #00A651;
+  border-radius: 50%;
+  position: absolute;
+  left: 23.5rem;
+  top: 7.5rem;
+}
