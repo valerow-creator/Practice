@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --gray: #dfdfde;
+}
+
+/* BOX SIZING RULES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* SET CORE BODY DEFAULTS */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #2b3467;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+}
+
+.container {
+  text-align: center;
+  min-width: 18.75rem;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.restart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.number {
+  background-color: var(--gray);
+  color: #2b3467;
+  font-size: 25px;
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.guess {
+  width: 100%;
+  height: 70px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border: none;
+  background-color: var(--gray);
+  outline: none;
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.btn {
+  margin-top: 20px;
+  height: 30px;
+  letter-spacing: 3px;
+  border: transparent;
+  background-color: #31e1f7;
+  width: 100%;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 150s;
+  box-shadow: 0.1rem 0.1rem 1rem 0 #c3f8ff;
+  scale: 1.05;
+  border-radius: 8px;
+}
+
+.right-side {
+  margin-top: 20px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
