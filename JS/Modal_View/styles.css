@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* BOX SIZING RULES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* SET CORE BODY DEFAULTS */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: red; */
+  background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.tools {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  width: 100px;
+  padding: 10px;
+  background-color: #fff;
+  border: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  scale: 1.1;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+/* *** MESSAGE CARD *** */
+
+.modal {
+  padding: 40px;
+  background-color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(17px);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.title {
+  color: black;
+  text-align: center;
+}
+
+.message {
+  border-radius: 8px;
+  padding: 20px;
+  width: 500px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
