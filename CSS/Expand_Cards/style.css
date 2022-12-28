@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ------------------- */
+/* RESET               */
+/* ------------------- */
+
+/* BOX SIZING RULES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* SET CORE BODY DEFAULTS */
+body {
+  /* FONT & TEXT */
+  font-family: 'Roboto', sans-serif;
+
+  /* LAYOUT */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.first {
+  background-image: url(https://images.unsplash.com/photo-1538964524798-581b17c6b5ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80);
+}
+
+.second {
+  background-image: url(https://images.unsplash.com/photo-1639846583131-9828a89e07c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+}
+
+.third {
+  background-image: url(https://images.unsplash.com/photo-1637407412239-426ab95afa6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2942&q=80);
+}
+
+.fourth {
+  background-image: url(https://images.unsplash.com/photo-1571278103379-a398a4baad21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80);
+}
+
+.fifth {
+  background-image: url(https://images.unsplash.com/photo-1576524446143-f644dcbaa605?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2066&q=80);
+}
+
+.sixth {
+  background-image: url(https://images.unsplash.com/photo-1538964524798-581b17c6b5ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80);
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex: 0.5;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-tyoe(4),
+  .panel:nth-of-tyoe(5) {
+    display: none;
+  }
+}
