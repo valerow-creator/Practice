@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ------------------- */
+/* RESET               */
+/* ------------------- */
+
+/* BOX SIZING RULES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* SET CORE BODY DEFAULTS */
+body {
+  /* FONT & TEXT */
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: #303030;
+
+  /* LAYOUT */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* IMPROVE MEDIA DEFAULTS */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* AVOID TEXT OVERFLOWS */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* MAKE FORM ELEMENTS EASIER TO WORK WITH */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* REMOVE ANIMATIONS FOR PEOPLE WHO'VE TURNED THEM OFF */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* UTILITY CLASSES     */
+/* ------------------- */
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.words {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  font-size: 0.9rem;
+}
+
+i {
+  font-size: 0.75rem;
+}
+
+.result {
+  margin-top: 6.25rem;
+  border-bottom: 0.0625rem solid #a435f0;
+  width: 50%;
+  padding-left: 0.3125rem;
+  font-size: 18px;
+}
+
+.reset {
+  border: none;
+  border-radius: 8px;
+  background-color: #a435f0;
+  color: white;
+  padding: 8px;
+  width: 50%;
+}
+
+.reset:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 17px -2px rgba(186, 121, 209, 0.59);
+}
+
+@media (min-width: 500px) {
+  input {
+    width: 100%;
+  }
+  .result {
+    width: 15%;
+  }
+
+  .reset {
+    width: 15%;
+    margin-top: 150px;
+  }
+}
